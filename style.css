@@ -12,7 +12,7 @@ body {
     border: 1px solid white;
     border-radius: 5px;
     justify-content: space-between;
-    width: 500px;
+    width: 30rem;
     padding: 1rem;
     justify-self: center;
 }
@@ -55,9 +55,9 @@ body {
 
 .option {
     position: absolute;
-    width: 90px;
+    width: 5.625rem;
     /* Adjust for the size you want */
-    height: 90px;
+    height: 5.625rem;
     border-radius: 50%;
     background: white;
     /* or your desired background/gradient */
@@ -292,5 +292,88 @@ body {
     font-family: sans-serif;
 }
 
+@media (max-width: 768px) {
+    .entire {
+        max-width: 600px;
+        overflow: hidden;
+    }
+}
 
-/* 2) The white content box in the center */
+@media (max-width: 400px) {
+    .entire {
+        overflow: hidden;
+        max-width: 280px;
+        position: fixed;
+    }
+    .score-section {
+        width: 180px;
+    }
+    img.logo-image {
+        width: 100px;
+    }
+    .score-info {
+        width: 50px;
+    }
+    .game-section {
+        max-width: 280px;
+        width: fit-content;
+    }
+    .mainDiv {
+        width: 12rem;
+        column-gap: 0rem;
+    }
+    .option-scissors-clicked {
+        border: 0.5rem solid yellow;
+    }
+    .option-rock-clicked {
+        border: 0.5rem solid red;
+    }
+    .option-paper-clicked {
+        border: 0.5rem solid blue;
+    }
+    .option-clicked {
+        width: 2rem;
+        height: 2rem;
+    }
+    .option-computer-rock-clicked {
+        border: 0.5rem solid red;
+    }
+    img.scissors {
+        height: 1rem;
+        width: 1rem;
+    }
+    img.rock {
+        height: 1rem;
+        width: 1rem;
+    }
+    img.paper {
+        height: 1rem;
+        width: 1rem;
+    }
+    img.computer-icon {
+        height: 1rem;
+        width: 1rem;
+    }
+    .win-lose-text {
+        font-size: 0.9rem;
+        font-weight: 1rem;
+    }
+    .play-again {
+        width: 2.8rem;
+        height: 1.5rem;
+        font-size: 8px;
+    }
+    .rule-section {
+        width: 50%;
+        padding: 0.5rem;
+    }
+    .rule-icon {
+        width: 40%;
+    }
+    .btn-container {
+        justify-self: center;
+    }
+    .btn-container span {
+        font-weight: 200;
+    }
+}

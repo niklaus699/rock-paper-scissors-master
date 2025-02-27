@@ -198,8 +198,10 @@ rules.addEventListener('click', () => {
     ruleText.textContent = 'Rules';
     const cancelIcon = document.createElement('img');
     cancelIcon.src = './images/icon-close.svg';
+    cancelIcon.className = 'cancel-icon';
     const rulesIcon = document.createElement('img');
     rulesIcon.src = './images/image-rules.svg';
+    rulesIcon.className = 'rules-icon';
     rulesIcon.style.justifySelf = 'center';
     upSection.append(ruleText, cancelIcon);
     ruleSection.append(upSection, rulesIcon);
