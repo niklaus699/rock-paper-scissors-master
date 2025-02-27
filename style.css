@@ -27,7 +27,7 @@ body {
 .game-section {
     justify-self: center;
     position: relative;
-    margin: 5rem auto 0;
+    margin: 5rem;
     max-width: 500px;
     min-height: 200px;
 }
