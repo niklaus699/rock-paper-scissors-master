@@ -1,3 +1,7 @@
+const newWidth = window.innerWidth;
+const newHeight = window.innerHeight;
+
+const entire = document.getElementById('entire');
 const gameSection = document.getElementById('gameSection');
 const paper = document.getElementById('paperButton');
 const scissors = document.getElementById('scissorsButton');
@@ -71,8 +75,14 @@ const showOnlyClickedIcon = (iconElement, iconClass) => {
     secondContainer.appendChild(computerPicked);
     secondContainer.appendChild(computerChoiceDiv);
     statusDisplay.style.display = 'none';
-    container.append(firstContainer, statusDisplay, secondContainer);
-
+    if (newWidth < 768) {
+        // Mobile layout changes
+        container.append(firstContainer, secondContainer);
+        entire.append(statusDisplay);
+    } else {
+        // Desktop layout changes
+        container.append(firstContainer, statusDisplay, secondContainer);
+    }
 
     gameSection.appendChild(container);
     gameSection.style.position = '';
@@ -184,7 +194,8 @@ rock.addEventListener('click', () => {
     computerChoiceDiv.appendChild(computerIcon);
     scoreDisplay.textContent = `${score}`;
 });
-container.insertBefore(statusDisplay, container.children[1]);
+
+// container.insertBefore(statusDisplay, container.children[1]);
 
 rules.addEventListener('click', () => {
     const entireRule = document.createElement('div');
