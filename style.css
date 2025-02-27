@@ -356,7 +356,7 @@ body {
         font-size: 8px;
     }
     .rule-section {
-        width: 50%;
+        width: 10%;
         padding: 0.5rem;
     }
     .rule-icon {
@@ -364,6 +364,7 @@ body {
     }
     .btn-container {
         justify-self: center;
+        margin-right: 0rem;
     }
     .btn-container span {
         font-weight: 200;
@@ -428,5 +429,13 @@ body {
         width: 100%;
         max-width: 200px;
         height: 45px;
+    }
+    .you-picked-text {
+        position: relative;
+        transform: translateX(-15%);
+    }
+    .computer-picked-text {
+        position: relative;
+        transform: translateX(10%);
     }
 }
