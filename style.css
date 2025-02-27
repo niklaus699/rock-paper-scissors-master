@@ -27,7 +27,7 @@ body {
 .game-section {
     justify-self: center;
     position: relative;
-    margin: 5rem;
+    margin: 5rem auto 0;
     max-width: 500px;
     min-height: 200px;
 }
@@ -316,9 +316,8 @@ body {
         width: 30px;
     }
     .game-section {
-        max-width: 280px;
         width: fit-content;
-        margin-top: 2rem;
+        margin: 3rem auto 0;
     }
     .mainDiv {
         width: 12rem;
@@ -357,15 +356,16 @@ body {
         font-size: 8px;
     }
     .rule-section {
-        width: 10%;
-        padding: 0.5rem;
+        width: 100%;
+        padding: 1rem;
     }
     .rule-icon {
-        width: 40%;
+        width: 50%;
     }
     .btn-container {
         justify-self: center;
         margin-right: 0rem;
+        width: 0%;
     }
     .btn-container span {
         font-weight: 200;
