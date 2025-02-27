@@ -324,10 +324,11 @@ body {
     /* .option {
         width: 1r;
     } */
-    .option-clicked {
+    /* .option-clicked {
         width: 2rem;
         height: 2rem;
-    }
+
+    } */
     img.scissors {
         height: 2rem;
         width: 2rem;
@@ -341,8 +342,8 @@ body {
         width: 2rem;
     }
     img.computer-icon {
-        height: 1rem;
-        width: 1rem;
+        height: 2rem;
+        width: 2rem;
     }
     .win-lose-text {
         font-size: 0.9rem;
