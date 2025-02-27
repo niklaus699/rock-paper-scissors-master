@@ -307,7 +307,7 @@ body {
         overflow: hidden;
     } */
     .score-section {
-        width: 230px;
+        width: 200px;
     }
     img.logo-image {
         width: 100px;
@@ -318,6 +318,7 @@ body {
     .game-section {
         max-width: 280px;
         width: fit-content;
+        margin-top: 2rem;
     }
     .mainDiv {
         width: 12rem;
