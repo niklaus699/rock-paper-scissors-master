@@ -352,8 +352,7 @@ body {
         width: 2.8rem;
         height: 1.5rem;
         font-size: 8px;
-        position: relative;
-        left: 20px;
+        justify-self: center;
     }
     .rule-section {
         width: 100%;
