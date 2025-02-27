@@ -235,3 +235,31 @@ const handleWinner = (win, draw) => {
         styleStatus(winLoseDraw = 'TIE');
     }
 }
+
+// Add touch events for mobile
+[paper, scissors, rock].forEach(btn => {
+    btn.addEventListener('touchstart', handleChoice);
+});
+
+function handleChoice(e) {
+    // Your existing click handler logic
+}
+
+// Handle window resize
+let resizeTimer;
+window.addEventListener('resize', () => {
+    document.body.classList.add('resize-animation-stopper');
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+        document.body.classList.remove('resize-animation-stopper');
+    }, 400);
+});
+
+// Update playAgain button
+playAgain.addEventListener('click', () => {
+    gameSection.innerHTML = '';
+    // Reset game state
+    gameSection.append(paper, scissors, rock, rules);
+    // Reset positions
+    paper.style.position = scissors.style.position = rock.style.position = 'static';
+});

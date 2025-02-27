@@ -1,10 +1,14 @@
 body {
     background-color: hsl(237, 49%, 15%);
+    overflow-x: hidden;
+    min-height: 100vh;
 }
 
 .main {
     justify-self: center;
-    margin-top: 1rem;
+    padding: 1rem;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .score-section {
@@ -15,12 +19,17 @@ body {
     width: 30rem;
     padding: 1rem;
     justify-self: center;
+    max-width: 700px;
+    margin: 0 auto;
+    width: 90%;
 }
 
 .game-section {
     justify-self: center;
-    margin-top: 7rem;
     position: relative;
+    margin: 5rem auto 0;
+    max-width: 500px;
+    min-height: 200px;
 }
 
 .score-info {
@@ -205,6 +214,7 @@ body {
     display: flex;
     justify-content: space-between;
     column-gap: 9rem;
+    justify-self: center;
 }
 
 .firstDiv {
@@ -293,17 +303,17 @@ body {
 }
 
 @media (max-width: 400px) {
-    body {
+    /* body {
         overflow: hidden;
-    }
+    } */
     .score-section {
-        width: 180px;
+        width: 230px;
     }
     img.logo-image {
         width: 100px;
     }
     .score-info {
-        width: 50px;
+        width: 30px;
     }
     .game-section {
         max-width: 280px;
@@ -313,6 +323,9 @@ body {
         width: 12rem;
         column-gap: 0rem;
     }
+    /* .option {
+        width: 1r;
+    } */
     .option-scissors-clicked {
         border: 0.5rem solid yellow;
     }
@@ -366,5 +379,67 @@ body {
     }
     .btn-container span {
         font-weight: 200;
+    }
+    .score-section {
+        width: 95%;
+        padding: 0.8rem;
+    }
+    .logo-image {
+        width: 80px;
+    }
+    .score-info {
+        width: 70px;
+        padding: 0.5rem;
+    }
+    .score-int {
+        font-size: 32px;
+    }
+    .option {
+        width: 100px;
+        height: 100px;
+    }
+    .option-clicked {
+        width: 130px;
+        height: 130px;
+    }
+    .game-section {
+        margin-top: 3rem;
+        min-height: 250px;
+    }
+    .triangle-bg {
+        width: 80%;
+        margin: 0 auto;
+    }
+    /* Adjust positions for mobile */
+    .option-paper {
+        transform: translateX(-150%);
+        top: -25%;
+    }
+    .option-scissors {
+        transform: translateX(50%);
+        top: -25%;
+    }
+    .option-rock {
+        top: 60%;
+    }
+    /* Results section */
+    .mainDiv {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1rem;
+    }
+    .firstDiv,
+    .secondDiv {
+        order: -1;
+        margin: 0 auto;
+    }
+    .win-lose-draw {
+        order: 2;
+        margin-top: 2rem;
+    }
+    .play-again {
+        width: 100%;
+        max-width: 200px;
+        height: 45px;
     }
 }
