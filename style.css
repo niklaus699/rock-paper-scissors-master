@@ -400,19 +400,18 @@ body {
     }
     /* Adjust positions for mobile */
     .option-paper {
-        /* transform: translateX(-150%); */
-        top: -25%;
+        transform: translateX(-23%);
+        top: -19%;
     }
     .option-scissors {
-        transform: translateX(50%);
-        top: -25%;
+        transform: translateX(20%);
+        top: -19%;
     }
     .option-rock {
         top: 60%;
     }
     /* Results section */
     .mainDiv {
-        flex-direction: column;
         gap: 2rem;
         padding: 1rem;
     }
