@@ -304,7 +304,7 @@ body {
     body {
         height: 40vh;
         /* 80% of the viewport height */
-        overflow-y: auto;
+        overflow-y: hidden;
     }
     .score-section {
         width: 200px;
@@ -426,7 +426,7 @@ body {
         margin: 0 auto;
     }
     .win-lose-draw {
-        margin-top: 0.1rem;
+        margin-top: 0;
     }
     .play-again {
         width: 50%;
