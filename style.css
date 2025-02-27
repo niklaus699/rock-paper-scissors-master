@@ -326,33 +326,21 @@ body {
     /* .option {
         width: 1r;
     } */
-    .option-scissors-clicked {
-        border: 0.5rem solid yellow;
-    }
-    .option-rock-clicked {
-        border: 0.5rem solid red;
-    }
-    .option-paper-clicked {
-        border: 0.5rem solid blue;
-    }
     .option-clicked {
         width: 2rem;
         height: 2rem;
     }
-    .option-computer-rock-clicked {
-        border: 0.5rem solid red;
-    }
     img.scissors {
-        height: 1rem;
-        width: 1rem;
+        height: 2rem;
+        width: 2rem;
     }
     img.rock {
-        height: 1rem;
-        width: 1rem;
+        height: 2rem;
+        width: 2rem;
     }
     img.paper {
-        height: 1rem;
-        width: 1rem;
+        height: 2rem;
+        width: 2rem;
     }
     img.computer-icon {
         height: 1rem;
@@ -395,12 +383,12 @@ body {
         font-size: 32px;
     }
     .option {
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 70px;
     }
     .option-clicked {
-        width: 130px;
-        height: 130px;
+        width: 70px;
+        height: 70px;
     }
     .game-section {
         margin-top: 3rem;
@@ -412,7 +400,7 @@ body {
     }
     /* Adjust positions for mobile */
     .option-paper {
-        transform: translateX(-150%);
+        /* transform: translateX(-150%); */
         top: -25%;
     }
     .option-scissors {
