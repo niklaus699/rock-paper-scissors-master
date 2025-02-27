@@ -302,7 +302,7 @@ body {
 
 @media (max-width: 400px) {
     body {
-        height: 80vh;
+        height: 40vh;
         /* 80% of the viewport height */
         overflow-y: auto;
     }
