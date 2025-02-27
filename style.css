@@ -302,8 +302,8 @@ body {
 
 @media (max-width: 400px) {
     body {
-        height: fit-content
-        /* overflow-y: ; */
+        height: 650px;
+        overflow-y: hidden;
     }
     .score-section {
         width: 200px;
