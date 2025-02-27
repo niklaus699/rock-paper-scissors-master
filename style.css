@@ -302,7 +302,9 @@ body {
 
 @media (max-width: 400px) {
     body {
-        height: 500px;
+        height: 80vh;
+        /* 80% of the viewport height */
+        overflow-y: auto;
     }
     .score-section {
         width: 200px;
