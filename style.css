@@ -292,18 +292,9 @@ body {
     font-family: sans-serif;
 }
 
-@media (max-width: 768px) {
-    .entire {
-        max-width: 600px;
-        overflow: hidden;
-    }
-}
-
 @media (max-width: 400px) {
-    .entire {
+    body {
         overflow: hidden;
-        max-width: 280px;
-        position: fixed;
     }
     .score-section {
         width: 180px;
