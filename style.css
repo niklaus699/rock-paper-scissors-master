@@ -171,17 +171,15 @@ body {
 
 .btn-container {
     border-radius: 5px;
-    border: 1px solid white;
+    border: 1.9px solid white;
     justify-self: right;
     margin-right: 2rem;
     cursor: pointer;
 }
 
-.btn-container span {
+.btn-container button {
+    background-color: inherit;
     color: white;
-    padding: 2rem;
-    font-family: sans-serif;
-    font-weight: 400;
 }
 
 .computer-picked-text {
@@ -363,10 +361,8 @@ body {
         width: 50%;
     }
     .btn-container {
-        align-self: center;
-    }
-    .btn-container span {
-        font-weight: 200;
+        margin: 0;
+        justify-self: center;
     }
     .score-section {
         width: 95%;
@@ -425,7 +421,7 @@ body {
         margin-top: 2rem;
     }
     .play-again {
-        width: 100%;
+        width: 50%;
         max-width: 200px;
         height: 45px;
     }
