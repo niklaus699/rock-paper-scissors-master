@@ -365,6 +365,8 @@ body {
     .btn-container {
         margin: 0;
         justify-content: center;
+        justify-items: center;
+        align-content: center;
     }
     .score-section {
         width: 95%;
