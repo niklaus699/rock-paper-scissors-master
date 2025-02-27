@@ -1,0 +1,296 @@
+body {
+    background-color: hsl(237, 49%, 15%);
+}
+
+.main {
+    justify-self: center;
+    margin-top: 1rem;
+}
+
+.score-section {
+    display: flex;
+    border: 1px solid white;
+    border-radius: 5px;
+    justify-content: space-between;
+    width: 500px;
+    padding: 1rem;
+    justify-self: center;
+}
+
+.game-section {
+    justify-self: center;
+    margin-top: 7rem;
+    position: relative;
+}
+
+.score-info {
+    background-color: white;
+    display: grid;
+    color: gray;
+    width: 80px;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.score-text {
+    font-family: -apple-system;
+    justify-self: center;
+}
+
+.score-int {
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: bolder;
+    justify-self: center;
+}
+
+.triangle-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* Common styles for each option circle */
+
+.option {
+    position: absolute;
+    width: 90px;
+    /* Adjust for the size you want */
+    height: 90px;
+    border-radius: 50%;
+    background: white;
+    /* or your desired background/gradient */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.option-clicked {
+    width: 120px;
+    /* Adjust for the size you want */
+    height: 120px;
+    border-radius: 50%;
+    background: white;
+    /* or your desired background/gradient */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    cursor: pointer;
+    position: relative;
+}
+
+
+/* Positioning each option around the triangle */
+
+
+/* Paper at the top */
+
+.option-paper {
+    top: -10px;
+    left: 6%;
+    border: 20px solid blue;
+    transform: translate(-50%, -20%);
+}
+
+.option-paper-clicked {
+    top: -10px;
+    left: 23%;
+    border: 20px solid blue;
+    transform: translate(-50%, -20%);
+}
+
+.option-computer-paper-clicked {
+    border: 20px solid blue;
+    position: relative;
+    top: -10px;
+    right: 6%;
+}
+
+
+/* Scissors on the right */
+
+.option-scissors {
+    border: 20px solid yellow;
+    top: -10px;
+    right: 0;
+    transform: translate(50%, -20%);
+}
+
+.option-scissors-clicked {
+    border: 20px solid yellow;
+    position: relative;
+    top: -38px;
+    left: -23%;
+}
+
+.option-computer-scissors-clicked {
+    top: -10px;
+    right: 6%;
+    border: 20px solid yellow;
+}
+
+
+/* Rock on the left */
+
+.option-rock {
+    border: 20px solid red;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
+.option-rock-clicked {
+    border: 20px solid red;
+    top: -35px;
+    left: -20%;
+}
+
+
+/* Rock on the left */
+
+.option-computer-rock-clicked {
+    border: 20px solid red;
+    top: -10px;
+    right: 6%;
+}
+
+.btn-container {
+    border-radius: 5px;
+    border: 1px solid white;
+    justify-self: right;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.btn-container span {
+    color: white;
+    padding: 2rem;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.computer-picked-text {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.you-picked-text {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.house-pick {
+    position: relative;
+    width: 120px;
+    top: -10px;
+    right: -15%;
+    /* Adjust for the size you want */
+    height: 120px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.2);
+    /* or your desired background/gradient */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.mainDiv {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 9rem;
+}
+
+.firstDiv {
+    display: grid;
+    row-gap: 60px;
+}
+
+.secondDiv {
+    display: grid;
+}
+
+.computer-icon {
+    justify-self: center;
+    /* position: relative; */
+    left: 20%;
+}
+
+.win-lose-draw {
+    justify-self: center;
+    display: grid;
+    align-content: center;
+}
+
+.win-lose-text {
+    font-family: sans-serif;
+    font-size: 2rem;
+    color: white;
+    font-weight: 3rem;
+    justify-self: center;
+}
+
+.play-again {
+    background-color: white;
+    color: gray;
+    height: 2rem;
+    width: 15rem;
+    border-radius: 0.4rem;
+}
+
+.rules-content {
+    display: flex;
+    position: fixed;
+    /* Stays in the same place even if scrolled */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    /* Full viewport width */
+    height: 100vh;
+    /* Full viewport height */
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent backdrop */
+    /* Hide by default */
+    align-items: center;
+    /* Center content vertically */
+    justify-content: center;
+    /* Center content horizontally */
+    z-index: 9999;
+    /* Make sure it's on top of other content */
+}
+
+
+/* 1) The overlay that covers the entire screen */
+
+.rule-section {
+    display: grid;
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.up-section {
+    margin-bottom: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rule-text {
+    color: black;
+    font-weight: bolder;
+    font-size: larger;
+    font-family: sans-serif;
+}
+
+
+/* 2) The white content box in the center */

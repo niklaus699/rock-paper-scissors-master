@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+</head>
+
+<body id="body">
+    <div class="entire">
+        <div class="main">
+            <div class="score-section">
+                <img src="./images/logo.svg" alt="Rock||Paper||Scissors" srcset="" class="logo-image">
+                <div class="score-info">
+                    <span class="score-text">
+                      Score
+                    </span>
+                    <span class="score-int" id="scoreInteger">
+                        <!-- score will display here -->
+                    </span>
+                </div>
+            </div>
+            <div class="game-section" id="gameSection">
+                <img src="./images/bg-triangle.svg" alt="" class="triangle-bg" id="triangleId">
+                <div class="option option-paper" id="paperButton">
+                    <img src="./images/icon-paper.svg" alt="">
+                </div>
+                <div class="option option-scissors" id="scissorsButton">
+                    <img src="./images/icon-scissors.svg" alt="" class="scissors">
+                </div>
+                <div class="option option-rock" id="rockButton">
+                    <img src="./images/icon-rock.svg" alt="" class="rock">
+                </div>
+
+            </div>
+        </div>
+        <div class="btn-container" id="rulesButton">
+            <span>Rules</span>
+        </div>
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
