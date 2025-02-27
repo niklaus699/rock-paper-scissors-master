@@ -302,7 +302,7 @@ body {
 
 @media (max-width: 400px) {
     body {
-        height: 650px;
+        height: 500px;
     }
     .score-section {
         width: 200px;
