@@ -304,7 +304,6 @@ body {
     body {
         height: 40vh;
         /* 80% of the viewport height */
-        overflow-y: hidden;
     }
     .score-section {
         width: 200px;
